@@ -1,0 +1,31 @@
+@import "{{ site.theme }}";
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: left;
+}
+
+header {
+  text-align: left;
+}
+
+header img {
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+header p {
+  font-size: 0.95em;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
