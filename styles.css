@@ -21,7 +21,7 @@ body {
 .sidebar {
     width: 40%; 
     background-color: #f8f8f8;
-    padding: 20px;
+    padding: 65px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     overflow: hidden; 
     box-sizing: border-box;
@@ -35,27 +35,29 @@ body {
     border-radius: 0%;
 }
 
-.sidebar h2 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #000;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.sidebar .title {
+.sidebar h2 {  /* Esteban García Muñoz*/
+    font-family: 'Segoe UI';
     font-size: 16px;
     font-weight: bold;
-    text-align: center;
-    color: #007bff;
-    margin-bottom: 5px;
+    color: #555555;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-.sidebar .subtitulo {
+.sidebar .title {  /* Computer Science Student */
+    font-family: 'Segoe UI';
     font-size: 14px;
-    text-align: center;
+    font-weight: bold;
+    text-align: left;
+    color: #555555;
+    margin-bottom: 0px;
+}
+
+.sidebar .subtitulo {  /* CUNEF UNIVERSIDAD*/
+    font-size: 12px;
+    text-align: left;
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .section-divider {
@@ -64,21 +66,24 @@ body {
 }
 
 .navigation {
-    list-style: none;
+    list-style: decimal;
     padding: 0;
-    margin: 0;
+    margin-left: 40px;
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 .navigation li {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .navigation li a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
     color: #007bff;
     display: block;
-    padding: 5px 0;
+    padding: 1px 0;
 }
 
 .navigation li a:hover {
@@ -91,7 +96,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 65px;
 }
 
 .contact-buttons a {
@@ -112,6 +117,23 @@ body {
 
 .contact-buttons .btn-primary:hover {
     background-color: #0056b3;
+}
+
+.sidebar .email {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* "email:" en gris suave */
+.sidebar .email span {
+    color: #555555;
+}
+
+/* El link con el estilo clásico */
+.sidebar .email a {
+    color: #007bff; 
+    text-decoration: underline;
 }
 
 
