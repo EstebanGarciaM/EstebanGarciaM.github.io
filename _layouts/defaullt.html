@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title | default: "Esteban García Muñoz" }}</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      margin: 40px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #333;
+    }
+    .sidebar {
+      width: 280px;
+      padding-right: 30px;
+    }
+    .sidebar img {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .sidebar hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 10px 0;
+    }
+    .sidebar h2 {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .sidebar h3 {
+      font-size: 1em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    .sidebar p {
+      margin: 4px 0;
+    }
+    .sidebar ol {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    .sidebar a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      font-size: 0.8em;
+      color: #999;
+      margin-top: 20px;
+    }
+    .content {
+      flex: 1;
+      padding-left: 40px;
+      max-width: 700px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="{{ '/assets/foto.jpg' | relative_url }}" alt="Esteban García Muñoz">
+    <hr>
+    <h2>Esteban García Muñoz</h2>
+    <h3>Computer Science Student</h3>
+    <p><strong>(Catedrático)</strong> Professor of Computer Science and Artificial Intelligence<br>
+      <a href="#">CUNEF Universidad</a> (Madrid, Spain)
+    </p>
+    <ol>
+      <li><a href="#">Positions</a></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Publications</a></li>
+    </ol>
+    <p><a href="#">LinkedIn</a> | email: <a href="mailto:esteban@example.com">esteban@example.com</a></p>
+    <hr>
+    <div class="footer">
+      Hosted on GitHub Pages — Theme by orderedlist
+    </div>
+  </div>
+
+  <div class="content">
+    {{ content }}
+  </div>
+</body>
+</html>
