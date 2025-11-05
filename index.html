@@ -146,21 +146,37 @@
                     method: 'GET',
                     success: function (data) {
                         let output = '';
-                        data.forEach(proyecto => {
-                            // Verificamos si el repositorio tiene una descripción
-                            let descripcion = proyecto.description ? proyecto.description : 'No hay descripción disponible';
 
-                            // Construir la URL para la imagen, asumiendo que el repositorio tiene un archivo 'cover.jpg'
-                            const imageUrl = `https://raw.githubusercontent.com/${username}/${proyecto.name}/main/cover.jpg`;
+                        const projectNames = {
+                            "Parallel-Programming-PSO-Comparison": "Parallelization Strategies Comparison via PSO",
+                            "ejercicioCrudEsteban": "CRUD Application Example",
+                            "EstebanGarciaM.github.io": "Personal Portfolio Website",
+                            "Nutrifit": "Nutrifit App",
+                        };
+
+                        const reposToShow = [
+                            "Parallel-Programming-PSO-Comparison",
+                            "Nutrifit",
+                            "EstebanGarciaM.github.io",
+                            "ejercicioCrudEsteban"
+                        ];
+
+                        reposToShow.forEach(repoName => {
+                            const proyecto = data.find(p => p.name === repoName);
+                            if (!proyecto) return; // si el repo no existe, se salta
+
+                            let descripcion = proyecto.description ? proyecto.description : 'No hay descripción disponible';
+                            let displayName = projectNames[proyecto.name] || proyecto.name;
+                            const imageUrl = `https://raw.githubusercontent.com/${username}/${proyecto.name}/${proyecto.default_branch}/cover.jpg`;
 
                             output += `
                                 <div class="col-md-12 mb-4">
                                     <div class="project-card">
                                         <img src="${imageUrl}" alt="${proyecto.name}" onerror="this.onerror=null; this.src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png';">
                                         <div class="card-body">
-                                            <h5 class="card-title">${proyecto.name}</h5>
+                                            <h5 class="card-title">${displayName}</h5>
                                             <p class="card-text">${descripcion}</p>
-                                            <a href="${proyecto.html_url}" class="btn btn-primary" target="_blank">Ver en GitHub</a>
+                                            <a href="${proyecto.html_url}" class="btn btn-success" target="_blank">View in GitHub</a>
                                         </div>
                                     </div>
                                 </div>
