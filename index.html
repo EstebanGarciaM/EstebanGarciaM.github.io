@@ -32,7 +32,7 @@
 
 
             <div class="contact-buttons">
-                <a href="https://www.linkedin.com/in/esteban-garc%C3%ADa-mu%C3%B1oz-977895265/" target="_blank" class="btn btn-primary">LinkedIn</a>
+                <a href="www.linkedin.com/in/esteban-garcia-munoz" target="_blank" class="btn btn-primary">LinkedIn</a>
                 <a href="https://github.com/EstebanGarciaM?tab=repositories" target="_blank" class="btn btn-success">GitHub</a>
             </div>
 
@@ -46,85 +46,87 @@
         </aside>
 
         
-        <main class="content">
+        <main class="content-wrapper">
 
-            <section id="sobre-mi">
-                <h3>About Me</h3>
-                <p>
-                    I am a highly motivated Computer Science student at CUNEF Universidad, deeply passionate about programming, technology, and continuous learning. 
-                    I enjoy designing efficient and innovative solutions through code, with a strong interest in databases, data science, machine learning, 
-                    and their applications in business and decision-making.
-                </p>
-                <p>
-                    Throughout my academic journey, I have developed advanced technical skills in Python, C++, Java, R, and SQL, combined with strong analytical 
-                    and problem-solving abilities that allow me to approach challenges methodically and effectively.
-                </p>
-                <p>
-                    Beyond technical expertise, I bring strong analytical abilities, effective communication, problem-solving, and project management skills. 
-                    I am creative, curious, and eager to learn, with a strong work ethic and the ability to adapt to dynamic, collaborative environments 
-                    while performing well under pressure.
-                </p>
-                <p>
-                    Outside the academic and professional sphere, I am passionate about literature, philosophy, and ancient history. 
-                    I also enjoy golf, tennis, and skiing.
-                </p>
-            </section>
+            <div class="content">
 
-            <section id="skills">
-                <h3>Technical Skills</h3>
+                <section id="sobre-mi">
+                    <h3>About Me</h3>
+                    <p>
+                        I am a highly motivated Computer Science student at CUNEF Universidad, deeply passionate about programming, technology, and continuous learning. 
+                        I enjoy designing efficient and innovative solutions through code, with a strong interest in databases, data science, machine learning, 
+                        and their applications in business and decision-making.
+                    </p>
+                    <p>
+                        Throughout my academic journey, I have developed advanced technical skills in Python, C++, Java, R, and SQL, combined with strong analytical 
+                        and problem-solving abilities that allow me to approach challenges methodically and effectively.
+                    </p>
+                    <p>
+                        Beyond technical expertise, I bring strong analytical abilities, effective communication, problem-solving, and project management skills. 
+                        I am creative, curious, and eager to learn, with a strong work ethic and the ability to adapt to dynamic, collaborative environments 
+                        while performing well under pressure.
+                    </p>
+                    <p>
+                        Outside the academic and professional sphere, I am passionate about literature, philosophy, and ancient history. 
+                        I also enjoy golf, tennis, and skiing.
+                    </p>
+                </section>
 
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h4>Programming Languages</h4>
-                        <ul>
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>Java</li>
-                            <li>R</li>
-                            <li>SQL</li>
-                        </ul>
+                <section id="skills">
+                    <h3>Technical Skills</h3>
+
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h4>Programming Languages</h4>
+                            <ul>
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>Java</li>
+                                <li>R</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Tools & Technologies</h4>
+                            <ul>
+                                <li><strong>Version Control:</strong> Git</li>
+                                <li><strong>IDEs:</strong> VSCode, IntelliJ, PyCharm, CLion</li>
+                                <li><strong>Data Science:</strong> Anaconda, Orange, Jupyter Notebooks</li>
+                                <li><strong>Database Management:</strong> DBeaver, Docker, Atlas, MongoDB Compass</li>
+                                <li><strong>Operating Systems:</strong> Windows, Linux</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Fields of Interest</h4>
+                            <ul>
+                                <li>Data Science</li>
+                                <li>Machine Learning</li>
+                                <li>Business Analytics</li>
+                                <li>Software Development</li>
+                                <li>Databases</li>
+                            </ul>
+                        </div>
+
                     </div>
+                </section>
 
-                    <div class="skill-category">
-                        <h4>Tools & Technologies</h4>
-                        <ul>
-                            <li><strong>Version Control:</strong> Git</li>
-                            <li><strong>IDEs:</strong> VSCode, IntelliJ, PyCharm, CLion</li>
-                            <li><strong>Data Science:</strong> Anaconda, Orange, Jupyter Notebooks</li>
-                            <li><strong>Database Management:</strong> DBeaver, Docker, Atlas, MongoDB Compass</li>
-                            <li><strong>Operating Systems:</strong> Windows, Linux</li>
-                        </ul>
+                <section id="mis-proyectos">
+                    <h3>My projects</h3>
+                    <p>Below are some of the repositories from my GitHub profile:</p>
+                    <button id="load-projects" class="btn btn-success">View my projects</button>
+                    <div id="api-results" class="row mt-4">
+                        <!-- Los proyectos se cargarán aquí -->
                     </div>
+                </section>
 
-                    <div class="skill-category">
-                        <h4>Fields of Interest</h4>
-                        <ul>
-                            <li>Data Science</li>
-                            <li>Machine Learning</li>
-                            <li>Business Analytics</li>
-                            <li>Software Development</li>
-                            <li>Databases</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-            <section id="mis-proyectos">
-                <h3>My projects</h3>
-                <p>Below are some of the repositories from my GitHub profile:</p>
-                <button id="load-projects" class="btn btn-success">View my projects</button>
-                <div id="api-results" class="row mt-4">
-                    <!-- Los proyectos se cargarán aquí -->
-                </div>
-            </section>
-
-            <section id="download-cv">
-                <h3>Download CV</h3>
-                <p>You can download my full résumé in PDF format below:</p>
-                <a href="EstebanGarciaMunoz_CV.pdf" target="_blank" download class="btn btn-success">Download CV</a>
-            </section>
-            
+                <section id="download-cv">
+                    <h3>Download CV</h3>
+                    <p>You can download my full résumé in PDF format below:</p>
+                    <a href="EstebanGarciaMunoz_CV.pdf" target="_blank" download class="btn btn-success">Download CV</a>
+                </section>
+            </div>
             
             
         </main>

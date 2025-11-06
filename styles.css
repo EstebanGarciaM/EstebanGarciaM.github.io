@@ -22,7 +22,8 @@ body {
     width: 40%; 
     background-color: #ffffff;
     padding: 60px 50px 20px 170px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    /*box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);*/
     overflow: hidden; 
     box-sizing: border-box;
 }
@@ -138,16 +139,21 @@ body {
 
 
 /* Contenido desplazable */
+.content-wrapper {
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto;   /* el scroll va aquí */
+    box-sizing: border-box;
+}
+
 .content {
     font-family: "Segoe UI";
     font-size: 12px;
-    width: 60%; 
-    padding: 60px 160px 20px 40px;
-    height: 100vh; 
+    padding: 60px 160px 20px 40px; /* mantiene tu padding actual */
     background-color: #ffffff;
     box-sizing: border-box;
-    overflow-y: auto;
 }
+
 
 .content h3 {  /* About Me */
     font-size: 15px;
